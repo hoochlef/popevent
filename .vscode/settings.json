@@ -1,0 +1,17 @@
+{
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+    }
+    },
+    "[django-html]": {
+        "editor.defaultFormatter": "monosans.djlint",
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true
+    },
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    }
+}

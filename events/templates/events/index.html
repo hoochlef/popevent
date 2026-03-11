@@ -1,0 +1,31 @@
+{% extends "events/base.html" %}
+{% block description %}
+    Browse the latest events in your niche or create your own.
+{% endblock description %}
+{% block title %}
+    Events creation and discovery
+{% endblock title %}
+{% block content %}
+    <section class="hero-section">
+        <h1>Find your next event without wasting hours scrolling on social media</h1>
+    </section>
+    <section id="features" class="features-section">
+        <a href="{% url 'index' %}#features" class="section-title">Features,</a>
+        <div>
+            <ul>
+                <li>
+                    Can I <strong>prevent our clients from seeing unfinished work?</strong>
+                </li>
+                <li>
+                    Can I <strong>link up files from Google Docs, Figma, Dropbox, Airtable, and other apps?</strong>
+                </li>
+                <li>
+                    Can I <strong>see everything I need to do on a single screen?</strong>
+                </li>
+                <li>
+                    Can Basecamp <a href="#"><strong>tell me when someone completed an assignment?</strong></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+{% endblock content %}

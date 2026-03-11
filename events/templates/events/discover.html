@@ -1,0 +1,27 @@
+{% extends "events/base.html" %}
+{% comment %} Djlint causes the description tag
+to go a new line which causes the end result to have whitspaces
+fix it by either ignoring that rule, ignore the specific line or 
+something else {% endcomment %}
+{% block description %}
+    Discover the latest created events.
+{% endblock description %}
+{% block title %}
+    Discover
+{% endblock title %}
+{% block content %}
+    <section class="discovery">
+        <h1>Discover events</h1>
+        {% if latest_event_list %}
+            <ul>
+                {% for event in latest_event_list %}
+                    <li>
+                        <a href="{% url 'detail' event.id %}">{{ event.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No events are available.</p>
+        {% endif %}
+    </section>
+{% endblock content %}

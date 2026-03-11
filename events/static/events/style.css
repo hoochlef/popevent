@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: #0b1215;
+    --page-x-padding: clamp(1rem, 5vw, 8rem);
+    --page-padding-nav: 14px 38px;
+    --page-padding-main: 0px 38px;
+    --page-padding-footer: 20px 38px;
+}
+
+/* Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--page-padding-nav);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.1 rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-brand strong {
+    letter-spacing: -0.03em;
+}
+
+.nav-brand:hover strong {
+    text-decoration: underline;
+}
+
+.nav-brand sup {
+    font-size: 0.5rem;
+    color: #6b7280;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: -0.5rem;
+}
+
+/* Main */
+
+main {
+    padding: var(--page-padding-main);
+}
+
+/* Hero index */
+
+.hero-section {
+    padding: 80px 24px;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Features section */
+
+.features-section .section-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: #0b1215;
+}
+
+.features-section .section-title:hover {
+    color: #aa9ced;
+    text-decoration: underline;
+}
+
+/* Discovery section */
+
+.discovery {
+    padding: 15px 0px;
+}
+
+.discovery h1 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+
+.discovery ul {
+    list-style: none;
+}
+
+/* Footer */
+
+footer {
+    margin-top: auto;
+    padding: var(--page-padding-footer);
+    border-top: 1px solid #c1c4c8;
+}

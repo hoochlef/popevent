@@ -1,0 +1,35 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+# ----
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.pyc
+*.pyt 
+
+# Virtual environments
+.venv
+venv/
+
+# Environment variables
+.env
+.env.local
+
+# # VS Code
+# .vscode/
+
+# Logs
+*.log
+
+# Linux
+*.swp
+*~
+
+# Ruff
+.ruff_cache/

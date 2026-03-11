@@ -1,0 +1,29 @@
+{% extends "events/base.html" %}
+{% block description %}
+    See what {{ event.author_name }} has to say.
+{% endblock description %}
+{% block title %}
+    {{ event.title }}
+{% endblock title %}
+{% block content %}
+    <h1>{{ event.title }}</h1>
+    <p>
+        <strong>Author:</strong> {{ event.author_name }}
+    </p>
+    <p>
+        <strong>Created at:</strong> {{ event.created_at }}
+    </p>
+    <p>
+        <strong>Last updated:</strong> {{ event.updated_at }}
+    </p>
+    <p>{{ event.content }}</p>
+    <p>
+        <strong>Event date:</strong> {{ event.event_date }}
+    </p>
+    <p>
+        <strong>Category:</strong> {{ event.category }}
+    </p>
+    <p>
+        <strong>Place:</strong> {{ event.place }}
+    </p>
+{% endblock content %}
