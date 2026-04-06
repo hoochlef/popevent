@@ -16,31 +16,32 @@
         </title>
     </head>
     <body>
-        <nav>
-            <div class="nav-left">
-                <a href="{% url 'index' %}" class="nav-brand">
-                    <img src="{% static 'events/images/popevent-icon.svg' %}"
-                         width="28"
-                         height="28"
-                         alt="Logo" />
-                    <strong>Popevent</strong>
-                    <sup>beta</sup>
-                </a>
-                <span class="nav-tagline">is the <strong><mark>distraction-free</mark> way to find what’s next</strong></span>
-            </div>
-            <div class="nav-right">
-                <a href="{% url 'discover' %}">Discover</a>
-                <a href="{% url 'index' %}#features">Features</a>
-                <a href="#" class="btn-signin">Sign in</a>
-                <a href="#" class="btn-signup">Sign up</a>
-            </div>
-        </nav>
+        <header>
+            <a href="{% url 'index' %}">
+                <img src="{% static 'events/images/popevent-icon.svg' %}"
+                     width="28"
+                     height="28"
+                     alt="Popevent Logo" />
+                <strong>Popevent</strong>
+                <sup>beta</sup>
+            </a>
+        </header>
         <main>
             {% block content %}
             {% endblock content %}
         </main>
-        <footer class="page-wrapper">
-            Copyright Amine Hochlef
+        <footer>
+            <p>
+                <i>Developed and maintained by <a href="https://hochlef.pages.dev/" target="_blank">Amine Hochlef</a></i>
+            </p>
+            <small>
+                <a href="mailto:based.fantasy433@passinbox.com">Contact</a>|
+                <a href="https://github.com/hoochlef/popevent" target="_blank">GitHub</a>|
+                <a href="https://termly.io/resources/templates/terms-and-conditions-template/"
+                   target="_blank">Terms</a>|
+                <a href="https://en.wikipedia.org/wiki/Privacy" target="_blank">Privacy</a> |
+                <a href="#" target="_blank">Why?</a>
+            </small>
         </footer>
     </body>
 </html>

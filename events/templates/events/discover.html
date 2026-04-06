@@ -10,18 +10,19 @@ something else {% endcomment %}
     Discover
 {% endblock title %}
 {% block content %}
-    <section class="discovery">
-        <h1>Discover events</h1>
-        {% if latest_event_list %}
-            <ul>
-                {% for event in latest_event_list %}
-                    <li>
-                        <a href="{% url 'detail' event.id %}">{{ event.title }}</a>
-                    </li>
-                {% endfor %}
-            </ul>
-        {% else %}
-            <p>No events are available.</p>
-        {% endif %}
-    </section>
+    <h1>Discover the latest events created</h1>
+    <p>Subscribe to the <a href="#">RSS feed</a>.</p>
+    {% if latest_event_list %}
+        <ol>
+            {% for event in latest_event_list %}
+                <li>
+                    <a href="{% url 'detail' event.id %}">{{ event.title }}</a>
+                </li>
+            {% endfor %}
+        </ol>
+        <p><a href="#">More 🢡</a></p>
+    {% else %}
+        <p>No events are available.</p>
+    {% endif %}
+    <p>Create your own events now with <a href="{% url 'signup' %}">Popevents ٩(๑❛ᴗ❛๑)۶</a>.</p>
 {% endblock content %}

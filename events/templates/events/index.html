@@ -6,26 +6,22 @@
     Events creation and discovery
 {% endblock title %}
 {% block content %}
-    <section class="hero-section">
-        <h1>Find your next event without wasting hours scrolling on social media</h1>
-    </section>
-    <section id="features" class="features-section">
-        <a href="{% url 'index' %}#features" class="section-title">Features,</a>
-        <div>
-            <ul>
-                <li>
-                    Can I <strong>prevent our clients from seeing unfinished work?</strong>
-                </li>
-                <li>
-                    Can I <strong>link up files from Google Docs, Figma, Dropbox, Airtable, and other apps?</strong>
-                </li>
-                <li>
-                    Can I <strong>see everything I need to do on a single screen?</strong>
-                </li>
-                <li>
-                    Can Basecamp <a href="#"><strong>tell me when someone completed an assignment?</strong></a>
-                </li>
-            </ul>
-        </div>
-    </section>
+    <h1>Find your next event without wasting hours scrolling on social media</h1>
+    <!-- navigation -->
+    <nav>
+        <a href="{% url 'discover' %}">Discover</a>
+        <a href="{% url 'signin' %}">Sign in</a>
+        <a href="{% url 'signup' %}">Sign up</a>
+    </nav>
+    <h2>With Popevent you can discover and create events.</h2>
+    <p>Here's what you can expect:</p>
+    <ul>
+        <li>No trackers, ads, or scripts</li>
+        <li>Seconds to sign up</li>
+        <li>RSS & Atom feeds support</li>
+        <li>
+            Lighweight web pages that load instantly and look good on <b>any</b> screen
+        </li>
+    </ul>
+    <h3>Find and engage with your community through events.</h3>
 {% endblock content %}
