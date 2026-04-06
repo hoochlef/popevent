@@ -14,6 +14,14 @@ def discover(request):
     context = {"latest_event_list": latest_event_list}
     return render(request, "events/discover.html", context)
 
+def signup(request):
+    """account creation function"""
+    return render(request, "events/signup.html")
+
+def signin(request):
+    """signin function"""
+    return render(request, "events/signin.html")
+
 
 def detail(request, event_id):
     """individual event page details"""
