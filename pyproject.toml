@@ -19,16 +19,8 @@ dev = [
 ]
 
 # ~~~~~~~ ruff config ~~~~~~~~~~
-## line length
-[tool.ruff]
-# Set the maximum line length to 100.
-line-length = 100
-
 [tool.ruff.lint]
-# Add the `line-too-long` rule to the enforced rule set.
 extend-select = [
-    "E501", # line-too-long rule,
-    # "D" # pydocstyle rule, 
     "DJ" # Django rules
 ]
 
