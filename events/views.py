@@ -1,5 +1,4 @@
-from django.http import Http404
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404, render
 
 from .models import Event
 
@@ -25,10 +24,5 @@ def signin(request):
 
 def detail(request, event_id):
     """individual event page details"""
-    try:
-        event = Event.objects.get(pk=event_id)
-    except Event.DoesNotExist:
-        raise Http404("Event does not exist")
-    # Or use question = get_object_or_404(Question, pk=question_id)
-
+    event = get_object_or_404(Event, pk=event_id)
     return render(request, "events/detail.html", {"event": event})
