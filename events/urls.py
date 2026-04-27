@@ -9,4 +9,6 @@ urlpatterns = [
     path("signin", views.signin, name="signin"),
     path("signup", views.signup, name="signup"),
     path("event/<int:event_id>/", views.detail, name="detail"),
+    path("dashboard", views.dashboard, name="dashboard"),
+    path("dashboard/new", views.create_event, name="new-event"),
 ]

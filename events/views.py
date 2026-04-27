@@ -26,3 +26,11 @@ def detail(request, event_id):
     """individual event page details"""
     event = get_object_or_404(Event, pk=event_id)
     return render(request, "events/detail.html", {"event": event})
+
+def dashboard(request):
+    """view responsible for the dashboard"""
+    return render(request, "events/dashboard.html")
+
+def create_event(request):
+    """view responsible for event creation form"""
+    return render(request, "events/new.html")

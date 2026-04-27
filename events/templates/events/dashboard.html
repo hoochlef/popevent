@@ -1,0 +1,45 @@
+{% extends "events/base.html" %}
+{% block description %}
+    Welcome to the dashboard.
+{% endblock description %}
+{% block title %}
+    Dashboard
+{% endblock title %}
+{% block content %}
+    <h1>Your created events</h1>
+    <nav>
+        <a href="{% url 'events:new-event' %}">Create event</a>
+    </nav>
+    <ul>
+        <li>
+            <a href="#">My wedding!!!!</a>
+            &nbsp;&nbsp;&nbsp;
+            <span><a href="#">Delete</a></span> |
+            <span><a href="#">Change</a></span> |
+            <span><a href="#">Show</a></span>
+        </li>
+        <li>
+            <a href="#">Come join us for barbecue</a>
+            &nbsp;&nbsp;&nbsp;
+            <span><a href="#">Delete</a></span> |
+            <span><a href="#">Change</a></span> |
+            <span><a href="#">Show</a></span>
+        </li>
+    </ul>
+    <p>
+        <a href="#">( ✪ワ✪)ノ Subscribe and create more events</a>
+    </p>
+    <h2>Account settings</h2>
+    <p>
+        <a href="#">Update email address</a>
+    </p>
+    <p>
+        <a href="#">Update password</a>
+    </p>
+    <p>
+        <a href="#">Sign out</a>
+    </p>
+    <p>
+        <a href="#">Delete account</a>
+    </p>
+{% endblock content %}

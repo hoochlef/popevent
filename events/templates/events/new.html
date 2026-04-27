@@ -1,0 +1,25 @@
+{% extends "events/base.html" %}
+{% block description %}
+    Create new event.
+{% endblock description %}
+{% block title %}
+    New event
+{% endblock title %}
+{% block content %}
+    <h1>What's on your mind?</h1>
+    <nav>
+        <a href="{% url 'events:dashboard' %}">Dashboard</a>
+        <a href="#">Upgrade</a>
+    </nav>
+    <p>
+        <button>Publish</button>
+    </p>
+    <details>
+        <summary>Parameters</summary>
+        <p>Title</p>
+        <p>Event date</p>
+        <p>Place</p>
+        <p>Category</p>
+    </details>
+    <textarea name="event-content" id="" rows="25" cols="100"></textarea>
+{% endblock content %}
