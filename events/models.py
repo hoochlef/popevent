@@ -63,4 +63,5 @@ class Event(models.Model):
         return self.title
 
     def was_created_recently(self):
-        return self.created_at >= timezone.now() - datetime.timedelta(days=1)
+        now = timezone.now()
+        return now - datetime.timedelta(days=1) <= self.created_at <= now
