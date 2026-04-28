@@ -1,5 +1,6 @@
 [project]
 name = "Popevent"
+license = "MIT"
 version = "0.1.0"
 description = "Browse the latest events in your niche or create your own."
 readme = "README.md"
